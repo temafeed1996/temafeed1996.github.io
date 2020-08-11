@@ -6,14 +6,15 @@
   border-radius: 50%;
   background-color: transparent;
   margin-right: 30px;
-  
+
   &:last-child {
     margin-right: 0;
   }
+
   &:before {
     content: "";
-    width: 8px;
-    height: 10px;
+    width: 22px;
+    height: 36px;
     display: block;
     background: svg-load('arrow-down.svg', fill=$text-color) center center / contain no-repeat;
     position: absolute;
@@ -21,6 +22,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   &--pointer--right {
     &:before {
       transform: translate(-50%, -50%) rotate(-180deg);
