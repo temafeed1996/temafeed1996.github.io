@@ -1,71 +1,43 @@
 .values {
   margin-bottom: 114px;
-
-  @include phones {
-    margin-bottom: 75px;
-  }
 }
 
 .values__container {
   position: relative;
-  @include tablets {
-    padding-bottom: 350px;
-  }
+
   &:before {
     content: "";
     position: absolute;
-    background: url('~images/decor/bag.jpg') left bottom / contain no-repeat;
+    background: url('~images/decor/beg.jpg') left bottom / contain no-repeat;
     display: block;
     bottom: 5%;
-    height: 79%;
+    height: 67%;
     width: 69%;
-    left: -20%;
-    @include tablets {
-      bottom: 0;
-      left: 50%;
-      height: 300px;
-      transform: translateX(-50%);
-      background-position: center center;
-    }
-
-    @include phones {
-      width: 100%;
-    }
+    left: -9%;
   }
 }
 
 .values__wrapper {
+  padding-top: 9.5%;
   position: relative;
 }
 
 .values__title {
-  margin-bottom: 82px;
+  margin-bottom: 90px;
   display: flex;
   justify-content: center;
 }
 
 .values__title-container {
-  width: 38%;
-  margin-left: 6%;
-  @include desktop {
-    width: 42%;
-    margin-left: 0;
-  }
-  @include tablets {
-    width: 68%;
-    text-align: center;
-  }
-  @include phones {
-    width: 100%;
-    margin-left: 0;
-    text-align: left;
-  }
+  width: 40%;
+  margin-left: 8%;
 }
 
 .values__title-text {
+  color: $text-color;
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 55px;
+  margin-bottom: 48px;
 }
 
 .values__content {
@@ -76,15 +48,6 @@
 
 .values__widget {
   display: flex;
-  justify-content: flex-end;
-  @include tablets {
-    justify-content: center;
-  }
-}
-
-.values__widget-container {
-  width: 66%;
-  @include tablets {
-    width: 95%;
-  }
+  position: relative;
+  padding-left: 41.5%;
 }
